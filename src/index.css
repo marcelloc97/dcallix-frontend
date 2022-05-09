@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'D-DIN-Bold';
+  font-weight: bold;
+  src: local('D-DIN-Bold') url(./assets/fonts/D-DIN-Bold.ttf) format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
