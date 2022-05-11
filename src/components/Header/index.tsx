@@ -9,7 +9,7 @@ export default function Header() {
       <Link to="/">
         <Logo />
       </Link>
-      <ul className="nav">
+      {/* <ul className="nav">
         <li className="nav-item">
           <Link to="/launches">
             Launches
@@ -20,8 +20,7 @@ export default function Header() {
             About
           </Link>
         </li>
-        
-      </ul>
+      </ul> */}
     </header>
   )
 }

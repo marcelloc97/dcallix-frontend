@@ -1,16 +1,11 @@
 header {
-  padding: 16px 32px;
+  padding: 12px 32px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   background: transparent;
-}
-
-header a img {
-  width: 40%;
-  color: white;
 }
 
 .nav {
@@ -24,7 +19,7 @@ header a img {
   list-style: none;
 }
 .nav .nav-item {
-  margin-right: 10px;
+  margin-right: 16px;
 }
 .nav .nav-item:last-child {
   margin: 0;
