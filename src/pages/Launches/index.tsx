@@ -85,7 +85,6 @@ export default function Launches() {
   return (
     <div className="launch-page">
       <h1>Lançamentos</h1>
-      <p>Veja as informações de lançamentos da Space X</p>
 
       <h3 className="section-title">Lançamento anterior</h3>
       { prevData ? createCard(prevData, { centered: true }) : 'Carregando...'}
@@ -103,5 +102,5 @@ export default function Launches() {
         {latestData ? mapData(latestData?.docs || []) : 'Carregando...'}
       </ul>
     </div>
-  )
+  );
 }

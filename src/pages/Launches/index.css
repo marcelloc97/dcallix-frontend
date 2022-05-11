@@ -1,15 +1,19 @@
 .launch-page {
   width: 1200px;
   margin: auto;
+  padding-bottom: 16px;
 
   font-family: 'D-DIN';
 }
 
 .launch-cards-container {
+  width: fit-content;
   margin: 0 auto;
+  padding: 0;
   
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 228px);
+  gap: 16px;
 
   list-style: none;
 }
@@ -22,6 +26,43 @@
 
 .section-title {
   margin: 0;
-  padding: 12px ;
-  background: rgb(18, 18, 18);
+  padding: 12px;
+  background: rgb(10, 10, 10);
+}
+
+@media screen and (max-width: 1352px) {
+  .launch-page {
+    width: 100%;
+  }
+
+  .launch-cards-container {
+    margin: auto;
+    grid-template-columns: repeat(4, 240px);
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .launch-cards-container {
+    margin: auto;
+    grid-template-columns: repeat(3, 240px);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .launch-cards-container {
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .launch-cards-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .launch-cards-container li {
+    width: fit-content;
+  }
 }
